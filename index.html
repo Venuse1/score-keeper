@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score keeper</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="score-keeper">
+        <img src="kostky.png" alt="dice">
+        <div class="header">
+            <h3>Score keeper</h3>
+        </div>
+        <div class="score-block">
+            
+            <h1 class="score">
+                <span id="p1Score">0</span> to <span id="p2Score">0</span>
+            </h1>
+
+            <h3 class="win">
+                Winning score: <span class="winningScore">5</span>
+            </h3>
+            <div class="player-count">
+                <h5>New winning score: </h5>
+                <input type="number" name="playerCount" id="maxValue">
+                <button class="confirm">Confirm</button>
+            </div>
+        </div>
+        <div class="buttons ">
+            <button id="p1Btn" class="btnP1">+1 Player One</button>
+            <button id="p2Btn" class="btnP2">+1 Player Two</button>
+            <button id="reset" class="btn-reset">Reset</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>
